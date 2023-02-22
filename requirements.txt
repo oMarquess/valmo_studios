@@ -1,0 +1,9 @@
+django-mathfilters
+django==4.0
+gunicorn==20.1.0
+psycopg2==2.9.5
+whitenoise==5.2.0
+django-widget-tweaks==1.4.8
+django-crispy-forms
+django-cors-headers
+Pillow==9.4.0
