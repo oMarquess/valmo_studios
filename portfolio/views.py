@@ -21,6 +21,9 @@ def three_d(request):
 def services(request):
     return render(request, 'portfolio/services.html')
 
+def success(request):
+    return render(request, 'portfolio/success.html')
+
 def contact(request):
 
     if request.method == 'POST' or None:
@@ -32,11 +35,8 @@ def contact(request):
         message = 'Name: {}, Email: {}, text: {}'.format(name, email, text)
         print(text, name, message)
         mail_admins(subject, message)
-        return redirect ('/success')
+        return redirect ('/')
     return render(request, 'portfolio/contact.html')
 
 def about(request):
     return render(request, 'portfolio/about.html')
-
-def success(request):
-    return render(request, 'portfolio/success.html')
